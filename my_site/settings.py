@@ -153,3 +153,16 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = BASE_DIR / "uploads"
 MEDIA_URL = "/uploads/"
+
+AWS_STORAGE_BUCKET_NAME = "nuruzzaman"
+AWS_S3_REGION_NAME = "ap-southeast-1"
+AWS_ACCESS_KEY_ID = "google drive - nabwab - nuruzzaman-portfolio-user"
+AWS_SECRET_ACCESS_KEY=""
+
+AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+
+STATICFILES_FOLDER = "static"
+MEDIAFILES_FOLDER = "media"
+
+STATICFILES_STORAGE = "custom_storages.StaticFileStorage"
+DEFAULT_FILE_STORAGE = "custom_storages.MediaFileStorage"

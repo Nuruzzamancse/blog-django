@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("blog.urls")),
     # path("blog/", include("blog.urls")) #http:localhost:800/blog/posts/my-first-page
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) \
++ static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
